@@ -1,0 +1,55 @@
+.class_container {
+  width: 100%;
+  height: 215px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 215px;
+}
+.class_img_box {
+  width: 100%;
+  height: 250px;
+}
+#class_img {
+  width: 150%;
+  position: relative;
+  right: 25%;
+}
+.background_blur {
+  background-image: url(/asset/image/bg_sequence.png);
+  position: absolute;
+  z-index: 2;
+  background-repeat: repeat-y;
+  width: 450px;
+  height: 100%;
+  opacity: 0.5;
+}
+.job_mark_silder {
+  position: absolute;
+  z-index: 3;
+  width: 220px;
+  height: 215px;
+  overflow: hidden;
+  background-image: url(/asset/image/spritesheet.png);
+  animation: sequence 2.3 infinite steps(36, end);
+  -webkit-animation: sequence 2.3s infinite steps(36, end);
+}
+
+@-webkit-keyframes sequence {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7920px 0;
+  }
+}
+@keyframes sequence {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7920px 0;
+  }
+}
