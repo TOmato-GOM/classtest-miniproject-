@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/class.css" />
+    <link rel="stylesheet" href="/css/test.css" />
   </head>
   <body>
     <div class="container">
@@ -22,23 +23,51 @@
               width="45px"
           /></a>
         </header>
-        <div class="title">
-          <p><span class="special_title">파이널판타지14</span> 에서</p>
-          <p>자신에게 가장 잘 어울리는</p>
-          <p>직업을 테스트해보세요!</p>
-        </div>
-        <div class="class_container">
-          <div class="class_img_box">
-            <img id="class_img" src="/asset/image/slider/slider_1.png" />
+        <div class="title_container">
+          <div class="class_container">
+            <div class="class_img_box">
+              <img id="class_img" src="/asset/image/slider/slider_1.png" />
+            </div>
+            <div class="background_blur"></div>
+            <div class="job_mark_silder"></div>
           </div>
-          <div class="background_blur"></div>
-          <div class="job_mark_silder"></div>
+          <div class="title">
+            <p><span class="special_title">파이널판타지14</span> 에서</p>
+            <p>자신에게 가장 잘 어울리는</p>
+            <p>직업을 테스트해보세요!</p>
+          </div>
+          <div class="button_box">
+            <button id="start_button">직업 테스트 시작하기</button>
+          </div>
         </div>
-        <div class="button_box">
-          <button id="start_button">직업 테스트 시작하기</button>
-        </div>
+
+        <!-- 테스트 영역 -->
+        <main class="test_container" style="display: none">
+          <section class="progress_bar_box">
+            <div class="progress_bar">
+              <p id="current_count">1 / 10</p>
+              <progress id="current_progress" value="10" max="100"></progress>
+            </div>
+          </section>
+          <section class="question_container">
+            <div class="question_box">
+              <p id="question">질문은 여기에 써주세요</p>
+            </div>
+            <div class="answer_box1">
+              <p id="answer1">1번 대답</p>
+            </div>
+            <div class="answer_box2">
+              <p id="answer2">2번 대답</p>
+            </div>
+            <div class="answer_box3">
+              <p id="answer3">3번 대답</p>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
   </body>
   <script src="/js/class.js"></script>
+  <script src="/js/question.js"></script>
+  <script src="/js/start.js"></script>
 </html>
